@@ -1,0 +1,130 @@
+.admin-page {
+  animation: fadeInUp 0.5s ease;
+}
+
+.admin-header {
+  margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+  font-size: 2rem;
+  color: var(--gray-900);
+}
+
+.admin-header p {
+  color: var(--gray-500);
+  font-size: 1.1rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.admin-tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+
+.admin-tab:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.admin-tab.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--color, var(--primary));
+  transition: all var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-card .stat-icon {
+  font-size: 2.5rem;
+  color: var(--color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+
+.stat-card .stat-label {
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+/* Tables */
+.table-container {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.table-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--gray-900);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--gray-50);
+}
+
+th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+tbody tr {
+  transition: background var(--transition-fast);
+}
+
+tbody tr:hover {
+  background: var(--gray-50);
+}
