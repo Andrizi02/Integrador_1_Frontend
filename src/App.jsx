@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { AuthProvider } from './context/AuthContext'
 import { CartProvider } from './context/CartContext'
 import Navbar from './components/Navbar'
@@ -58,6 +59,7 @@ function App() {
         <Footer />
         <CartIcon />
         <CartModal />
+        <SpeedInsights />
       </CartProvider>
     </AuthProvider>
   )
